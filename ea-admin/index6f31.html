@@ -1,0 +1,83 @@
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+    
+<!-- Mirrored from clean.easyauctiondemo.com/ea-admin/index.php?page=login by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 May 2019 05:13:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="robots" content="noindex, nofollow, noarchive"/>
+        <meta name="googlebot" content="noindex, nofollow, noarchive"/>
+        <title>Easy Auction &raquo; Log in</title>
+        <script type="text/javascript" src="https://clean.easyauctiondemo.com/ea-includes/easyauction/assets/js/jquery.min.js"></script>
+        <link type="text/css" href="https://clean.easyauctiondemo.com/ea-admin/style/backoffice_login.css" media="screen" rel="stylesheet"/>
+            </head>
+    <body class="login">
+        <div id="login">
+            <h1>
+                
+                    <img src="ea-content/themes/clean/images/logof.jpg"border="0" title="Osclass" alt="Osclass"/>
+                </a>
+            </h1>
+                        <form name="loginform" id="loginform" action="https://clean.easyauctiondemo.com/ea-admin/index.php" method="post"><input type='hidden' name='CSRFName' value='CSRF214942883_403182125' />
+        <input type='hidden' name='CSRFToken' value='c3138aeb36cc20f583b5855dadb0a4562e864d2d4fa4771ec3f51c8951fd396119aa338db3bd631e46caf533db1746e48a59309594fc3da2b09a77f2fa362cb9' />
+                <input type="hidden" name="page" value="login"/>
+                <input type="hidden" name="action" value="login_post"/>
+                <p>
+                    <label for="user_login">
+                        <span>Username</span>
+                        <input type="text" name="user" id="user_login" class="input" value="" size="20"/>
+                    </label>
+                </p>
+                <p>
+                    <label for="user_pass">
+                        <span>Password</span>
+                        <input type="password" name="password" id="user_pass" class="input" value="" size="20" autocomplete="off"/>
+                    </label>
+                </p>
+                                                                    <input type="hidden" name="locale" value="en_US"/>
+                                <p class="forgetmenot">
+                    <label>
+                        <input name="remember" type="checkbox" id="remember" value="1"/> Remember me                    </label>
+                        <a href="https://clean.easyauctiondemo.com/ea-admin/index.php?page=login&amp;action=recover" title="Forgot your password?" class="forgot">Forgot your password?</a>
+                </p>
+                <p class="submit">
+                    <input type="submit" name="submit" id="submit" value="Log in"/>
+                </p>
+            </form>
+
+        </div>
+        <p id="backtoblog"><a href="https://clean.easyauctiondemo.com/" title="Back to Easy Auction">&larr; Back to Easy Auction</a></p>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                function placeholder(input_form) {
+                    input_form.each(function() {
+                        $(this).focus(function() {
+                            $(this).prev().hide();
+                        }).blur(function() {
+                            if($(this).val() == '') {
+                                $(this).prev().show();
+                            }
+                        }).prev().click(function() {
+                            $(this).hide().next().focus();
+                        });
+                        if($(this).val() != '') {
+                            $(this).prev().hide();
+                        }
+                    });
+                }
+
+                placeholder($('#user_login, #user_pass'));
+                setTimeout(function() {
+                    placeholder($('#user_login, #user_pass'));
+                }, '500');
+
+                $(".ico-close").click(function(){
+                    $(this).parent().hide();
+                });
+
+                $("#user_login").focus();
+            });
+        </script>
+    </body>
+
+<!-- Mirrored from clean.easyauctiondemo.com/ea-admin/index.php?page=login by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 May 2019 05:13:13 GMT -->
+</html>
